@@ -1055,3 +1055,124 @@ textarea {
         display: none;
     }
 }
+
+/* FOOTER BACKGROUND */
+.footer {
+    background: linear-gradient(90deg, #ff6a88, #ff8c42, #ffc75f);
+    color: white;
+    padding: 50px 40px 20px;
+}
+
+/* CONTAINER */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* COLUMNS */
+.col {
+    width: 23%;
+    min-width: 220px;
+}
+
+/* LEFT BRAND */
+.brand {
+    padding-right: 20px;
+}
+
+.brand h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.brand p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* HEADINGS */
+.col h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* LINKS */
+.col a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 8px 0;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.col a::before {
+    content: "› ";
+}
+
+.col a:hover {
+    padding-left: 5px;
+}
+
+/* CONTACT */
+.contact p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+/* SOCIAL ICONS */
+.social {
+    margin-top: 15px;
+}
+
+.social a {
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: #ff6a88;
+    border-radius: 50%;
+    margin-right: 8px;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    transform: scale(1.2);
+}
+
+/* LINE */
+hr {
+    margin: 30px 0 15px;
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+}
+
+/* BOTTOM */
+.bottom {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    footer {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-about p {
+        max-width: 100%;
+    }
+
+    .social {
+        justify-content: center;
+    }
+}
