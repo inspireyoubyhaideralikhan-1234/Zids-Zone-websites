@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav class="top-nav">
+
+    <a href="index.html" class="logo">🌈 Kids Zone</a>
+
+    <p style="cursor: pointer;" id="menu-icon">🍔</p>
+
+    <div class="page-links">
+
+      <a href="abcupper.html">ABC</a>
+
+      <a href="abclower.html">abc</a>
+
+      <a href="numbers.html">123</a>
+
+      <a href="tables.html">Tables</a>
+
+      <a href="rhymes.html">Rhymes</a>
+
+      <a href="colors.html">Colors</a>
+
+      <a href="animals.html">Animals</a>
+
+      <a href="vegetables.html">Veggies</a>
+
+      <a href="days.html">Days</a>
+
+      <a href="months.html">Months</a>
+
+      <a href="addition.html">+ Add</a>
+
+      <a href="subtraction.html">− Sub</a>
+
+      <a href="contact.html">Contact</a>
+
+    </div>
+
+    <div id="drawer">
+
+      <p id="cross" style="position: absolute; cursor: pointer; margin-left: 140px;">❌</p>
+
+      <a href="abcupper.html">ABC</a>
+
+      <a href="abclower.html">abc</a>
+
+      <a href="numbers.html">123</a>
+
+      <a href="tables.html">Tables</a>
+
+      <a href="rhymes.html">Rhymes</a>
+
+      <a href="colors.html">Colors</a>
+
+      <a href="animals.html">Animals</a>
+
+      <a href="vegetables.html">Veggies</a>
+
+      <a href="days.html">Days</a>
+
+      <a href="months.html">Months</a>
+
+      <a href="addition.html">+ Add</a>
+
+      <a href="subtraction.html">− Sub</a>
+
+      <a href="contact.html">Contact</a>
+
+    </div>
+
+  </nav>
+
+  <script>
+
+    document.getElementById('menu-icon').addEventListener('click', function () {
+
+      document.getElementById('drawer').style.display = 'block';
+
+    });
+
+    document.getElementById('cross').addEventListener('click', function () {
+
+      document.getElementById('drawer').style.display = 'none';
+
+    });
+
+  </script>
+
+  <div class="main_container">
+
+    <div class="contact_container">
+
+      <div class="left">
+        <h2>CONTACT US</h2>
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <textarea id="message" placeholder="Message"></textarea>
+
+        <div class="btn-group">
+          <button class="submit-button" onclick="speakForm()">Submit</button>
+          <button class="clear-button" onclick="clearForm()">Clear</button>
+        </div>
+      </div>
+
+      <div class="right">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png">
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+
+    <div class="heading_main"><h1>Kidz Zone</h1></div>
+    
+    <p>Kidz Zone is a place where we can teach our children how to learn so much things</p>
+
+    <hr class="hr">
+
+    <div class="lower_footer">
+
+      <p> ©️ copyright. allrightsrecieved | Kidz Zone.</p>
+
+    </div>
+
+  </footer>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

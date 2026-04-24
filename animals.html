@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kids Zone | Animals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="top-nav">
+
+    <a href="index.html" class="logo">🌈 Kids Zone</a>
+
+    <p style="cursor: pointer;" id="menu-icon">🍔</p>
+
+    <div class="page-links">
+
+      <a href="abcupper.html">ABC</a>
+
+      <a href="abclower.html">abc</a>
+
+      <a href="numbers.html">123</a>
+
+      <a href="tables.html">Tables</a>
+
+      <a href="rhymes.html">Rhymes</a>
+
+      <a href="colors.html">Colors</a>
+
+      <a href="animals.html">Animals</a>
+
+      <a href="vegetables.html">Veggies</a>
+
+      <a href="days.html">Days</a>
+
+      <a href="months.html">Months</a>
+
+      <a href="addition.html">+ Add</a>
+
+      <a href="subtraction.html">− Sub</a>
+
+      <a href="contact.html">Contact</a>
+
+    </div>
+
+    <div id="drawer">
+
+      <p id="cross" style="position: absolute; cursor: pointer; margin-left: 140px;">❌</p>
+
+      <a href="abcupper.html">ABC</a>
+
+      <a href="abclower.html">abc</a>
+
+      <a href="numbers.html">123</a>
+
+      <a href="tables.html">Tables</a>
+
+      <a href="rhymes.html">Rhymes</a>
+
+      <a href="colors.html">Colors</a>
+
+      <a href="animals.html">Animals</a>
+
+      <a href="vegetables.html">Veggies</a>
+
+      <a href="days.html">Days</a>
+
+      <a href="months.html">Months</a>
+
+      <a href="addition.html">+ Add</a>
+
+      <a href="subtraction.html">− Sub</a>
+
+      <a href="contact.html">Contact</a>
+
+    </div>
+
+  </nav>
+
+  <script>
+
+    document.getElementById('menu-icon').addEventListener('click', function () {
+
+      document.getElementById('drawer').style.display = 'block';
+
+    });
+
+    document.getElementById('cross').addEventListener('click', function () {
+
+      document.getElementById('drawer').style.display = 'none';
+
+    });
+
+  </script>
+  <div class="container">
+    <a href="index.html" class="back-btn">← Back to Home</a>
+    <div class="section-header">
+      <span class="icon-big">🦁</span>
+      <div>
+        <h2>Animals</h2>
+        <div class="subtitle">Meet friendly animals.</div>
+      </div>
+    </div>
+    <div class="animals-grid">
+      <div class="animal-card"><span class="animal-icon">🦁</span><span class="animal-name">Lion</span></div>
+      <div class="animal-card"><span class="animal-icon">🐘</span><span class="animal-name">Elephant</span></div>
+      <div class="animal-card"><span class="animal-icon">🐒</span><span class="animal-name">Monkey</span></div>
+      <div class="animal-card"><span class="animal-icon">🦒</span><span class="animal-name">Giraffe</span></div>
+      <div class="animal-card"><span class="animal-icon">🦓</span><span class="animal-name">Zebra</span></div>
+      <div class="animal-card"><span class="animal-icon">🐯</span><span class="animal-name">Tiger</span></div>
+      <div class="animal-card"><span class="animal-icon">🐶</span><span class="animal-name">Dog</span></div>
+      <div class="animal-card"><span class="animal-icon">🐱</span><span class="animal-name">Cat</span></div>
+    </div>
+
+    <!-- Animal sound audio elements -->
+    <audio id="lion-sound" preload="none">
+      <source src="sounds/lion.mp3" type="audio/mpeg">
+      <source src="sounds/lion.wav" type="audio/wav">
+    </audio>
+    <audio id="elephant-sound" preload="none">
+      <source src="sounds/elephant.mp3" type="audio/mpeg">
+      <source src="sounds/elephant.wav" type="audio/wav">
+    </audio>
+    <audio id="monkey-sound" preload="none">
+      <source src="sounds/monkey.mp3" type="audio/mpeg">
+      <source src="sounds/monkey.wav" type="audio/wav">
+    </audio>
+    <audio id="giraffe-sound" preload="none">
+      <source src="sounds/giraffe.mp3" type="audio/mpeg">
+      <source src="sounds/giraffe.wav" type="audio/wav">
+    </audio>
+    <audio id="zebra-sound" preload="none">
+      <source src="sounds/zebra.mp3" type="audio/mpeg">
+      <source src="sounds/zebra.wav" type="audio/wav">
+    </audio>
+    <audio id="tiger-sound" preload="none">
+      <source src="sounds/tiger.mp3" type="audio/mpeg">
+      <source src="sounds/tiger.wav" type="audio/wav">
+    </audio>
+    <audio id="dog-sound" preload="none">
+      <source src="sounds/dog.mp3" type="audio/mpeg">
+      <source src="sounds/dog.wav" type="audio/wav">
+    </audio>
+    <audio id="cat-sound" preload="none">
+      <source src="sounds/cat.mp3" type="audio/mpeg">
+      <source src="sounds/cat.wav" type="audio/wav">
+    </audio>
+
+  </div>
+  <footer>
+
+    <div class="heading_main">
+      <h1>Kidz Zone</h1>
+    </div>
+
+    <p>Kidz Zone is a place where we can teach our children how to learn so much things</p>
+
+    <hr class="hr">
+
+    <div class="lower_footer">
+
+      <p> ©️ copyright. allrightsrecieved | Kidz Zone.</p>
+
+    </div>
+
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+
+</html>

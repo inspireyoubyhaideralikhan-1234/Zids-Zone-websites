@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kids Zone | Addition</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="top-nav">
+
+    <a href="index.html" class="logo">🌈 Kids Zone</a>
+
+    <p style="cursor: pointer;" id="menu-icon">🍔</p>
+
+    <div class="page-links">
+
+      <a href="abcupper.html">ABC</a>
+
+      <a href="abclower.html">abc</a>
+
+      <a href="numbers.html">123</a>
+
+      <a href="tables.html">Tables</a>
+
+      <a href="rhymes.html">Rhymes</a>
+
+      <a href="colors.html">Colors</a>
+
+      <a href="animals.html">Animals</a>
+
+      <a href="vegetables.html">Veggies</a>
+
+      <a href="days.html">Days</a>
+
+      <a href="months.html">Months</a>
+
+      <a href="addition.html">+ Add</a>
+
+      <a href="subtraction.html">− Sub</a>
+
+      <a href="contact.html">Contact</a>
+
+    </div>
+
+    <div id="drawer">
+
+      <p id="cross" style="position: absolute; cursor: pointer; margin-left: 140px;">❌</p>
+
+      <a href="abcupper.html">ABC</a>
+
+      <a href="abclower.html">abc</a>
+
+      <a href="numbers.html">123</a>
+
+      <a href="tables.html">Tables</a>
+
+      <a href="rhymes.html">Rhymes</a>
+
+      <a href="colors.html">Colors</a>
+
+      <a href="animals.html">Animals</a>
+
+      <a href="vegetables.html">Veggies</a>
+
+      <a href="days.html">Days</a>
+
+      <a href="months.html">Months</a>
+
+      <a href="addition.html">+ Add</a>
+
+      <a href="subtraction.html">− Sub</a>
+
+      <a href="contact.html">Contact</a>
+
+    </div>
+
+  </nav>
+
+  <script>
+
+    document.getElementById('menu-icon').addEventListener('click', function () {
+
+      document.getElementById('drawer').style.display = 'block';
+
+    });
+
+    document.getElementById('cross').addEventListener('click', function () {
+
+      document.getElementById('drawer').style.display = 'none';
+
+    });
+
+  </script>
+  </nav>
+  <div class="main_container_add">
+
+    <div class="inner_cont_add">
+
+      <h2>➕ Addition Game</h2>
+
+      <div class="number">
+
+        <h1 id="n1">0</h1>
+        <h1>+</h1>
+        <h1 id="n2">0</h1>
+
+      </div>
+
+      <input type="number" style="width: 200px; border-radius: 10px; padding: 10px;" id="ans" placeholder="Enter answer">
+      <br><br>
+
+      <button onclick="check()" style="background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Check</button>
+      <button onclick="newQ()" style="background: #f44336; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">New</button>
+
+      <p id="msg"></p>
+
+    </div>
+
+  </div>
+
+  <script>
+    let a, b;
+
+    function newQ() {
+      a = Math.floor(Math.random() * 20) + 1;
+      b = Math.floor(Math.random() * 20) + 1;
+
+      document.getElementById("n1").innerText = a;
+      document.getElementById("n2").innerText = b;
+      document.getElementById("ans").value = "";
+      document.getElementById("msg").innerText = "";
+    }
+
+    function check() {
+      let user = Number(document.getElementById("ans").value);
+
+      if (user === a + b) {
+        document.getElementById("msg").innerText = "Correct 🎉";
+      } else {
+        document.getElementById("msg").innerText = "Wrong ❌ Answer is " + (a + b);
+      }
+    }
+
+    newQ();
+  </script>
+
+  <footer>
+
+    <div class="heading_main">
+      <h1>Kidz Zone</h1>
+    </div>
+
+    <p>Kidz Zone is a place where we can teach our children how to learn so much things</p>
+
+    <hr class="hr">
+
+    <div class="lower_footer">
+
+      <p> ©️ copyright. allrightsrecieved | Kidz Zone.</p>
+
+    </div>
+
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
